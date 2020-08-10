@@ -8,7 +8,7 @@ import {
 } from "react-native";
 import Colorbox from "../components/Colorbox";
 
-export default ColorPalette = () => {
+export default ColorPalette = ({ navigation }) => {
   const buttons = [
     {
       title: "Flatlist",
@@ -85,7 +85,7 @@ export default ColorPalette = () => {
           <Text style={styles.headerText}>{section.title}</Text>
         )}
         renderItem={({ item }) => (
-          <Colorbox name={item.name} bgcolor={item.colorName} />
+          <Colorbox nav={navigation} name={item.name} bgcolor={item.colorName} />
         )}
         ListEmptyComponent={
           <Text style={styles.center}>This list is empty</Text>
