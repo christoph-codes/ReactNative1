@@ -2,12 +2,15 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
 export default Color = (props) => {
-    // console.log(props.route.params.bgcolor);
+
     const details = props.route.params;
     return (
-        <View style={[{backgroundColor: details.bgcolor}, styles.page]}>
+        <View style={[{backgroundColor: details.hexCode}, styles.page]}>
             <Text style={styles.colorname}>
-                {details.name}
+                {details.colorName}
+            </Text>
+            <Text style={styles.hexcode}>
+                {details.hexCode}
             </Text>
         </View>
     );

@@ -6,15 +6,9 @@ export default Colorbox = ({ bgcolor, name, nav }) => {
     backgroundColor: bgcolor,
   };
   return (
-    <TouchableOpacity
-      onPress={() => {
-        nav.navigate("Color", {bgcolor, name});
-      }}
-    >
       <View style={[styles.box, boxColor]}>
         <Text style={styles.boxText}>{name}</Text>
       </View>
-    </TouchableOpacity>
   );
 };
 

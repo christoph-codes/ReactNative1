@@ -7,7 +7,7 @@ export default Home = ({ navigation }) => {
       <Text style={[styles.mainHeader, styles.center]}>My First App</Text>
       <TouchableOpacity
         onPress={() => {
-          navigation.navigate("Color Palette");
+          navigation.navigate("Color Palettes");
         }}
       >
         <View style={styles.btn}>
